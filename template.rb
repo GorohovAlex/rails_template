@@ -48,6 +48,14 @@ after_bundle do
 
   generate 'pundit:install'
 
+  application do
+    <<~RUBY
+      config.generators do |g|
+        g.template_engine :haml
+      end
+    RUBY
+  end
+
   git :init
   git add: '.'
   git commit: "-m 'Initial commit with template'"
