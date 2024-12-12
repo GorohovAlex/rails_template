@@ -1,0 +1,29 @@
+require:
+  - "rubocop-performance"
+  - "rubocop-rspec"
+  - "rubocop-rails"
+
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+
+AllCops:
+  SuggestExtensions: false
+  NewCops: enable
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 12
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBrackets: no_space
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always_true
+
+Bundler/OrderedGems:
+  TreatCommentsAsGroupSeparators: true

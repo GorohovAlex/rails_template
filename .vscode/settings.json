@@ -1,0 +1,5 @@
+{
+  "i18n-ally.localesPaths": [
+    "my_project/config/locales"
+  ]
+}
